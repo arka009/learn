@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		
+		div{
+			margin: 10px;
+			width: 80px;
+			padding: 15px 30px;
+			background: #a8cf45;
+			font-family: "Microsoft Yahei";
+			font-size: 16px;
+			display: inline-block;
+			font-weight: bolder;
+			text-align: center;
+			color: #000;	
+			vertical-align: middle;
+			/*-webkit-transform: translateX(0);
+			-webkit-transition-duration: 0.3s;*/
+		}
+		div{
+			position: relative;
+			box-shadow: 0px 0px 1px black;
+		}
+		div:before,div:after{
+			content:'';
+			position: absolute;
+			width: 100%;
+			height: 5px;
+			left: 0px;
+			opacity: 0;
+			
+		}
+		div:before{
+			background: radial-gradient(ellipse at 50% 150%, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 80%);
+			bottom: 100%;
+		} 
+		div:after{
+			top: 100%;
+			background: radial-gradient(ellipse at 50% -50%, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 80%);
+		} 
+		div:hover:before,div:hover:after{
+			opacity: 1;
+			-webkit-transition-duration: 0.3s;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<div>
+		Hello CSS3
+	</div>
+</body>
+</html>
