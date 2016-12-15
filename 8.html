@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../jquery.min.js"></script>
+	<style type="text/css">
+	li{
+		list-style-type: none;
+	}
+		.nav_tab{
+			height: 60px;
+			line-height: 60px;
+		}
+		.nav_tab li{
+			width: 120px;
+			height: 60px;
+			text-align: center;
+			font-size: 14px;
+			border: 1px solid #000;
+			float: left;
+		}
+		.nav_tab li.active{
+			background: #f45;
+		}
+		.clearfix{
+				zoom: 1;
+		}
+		.clearfix:after{
+			display: block;content: "";clear: both;
+		}
+		.menu{
+			width: 80px;
+			line-height: 30px;
+			text-align: center;
+			float: left;
+			margin-right: 10px;
+		}
+		.menu li{
+			height: 30px;
+			margin-bottom: 3px;
+		}
+		.con{
+			border: 1px solid #03e;
+			padding: 10px;
+			width: 800px;
+			height: 600px;
+			float: left;
+		}
+		.con .con_div{
+			width: 100%;
+			height: 100%;
+			border: 1px solid #e43;
+		}
+		.content{
+			width: 1200px;
+			padding: 5px;
+		}
+
+	</style>
+</head>
+<body>
+	<ul class="nav_tab">
+	</ul>
+	<div class="content clearfix">
+		<ul class="menu">
+			<li><a href="javascript:;">首页</a></li>
+			<li><a href="javascript:;">新闻-menu</a></li>
+			<li><a href="javascript:;">摘要-menu</a></li>
+		</ul>
+		<div class="con">
+			<div class="con_div">首页</div>
+		</div>
+	</div>
+	
+	
+	<script type="text/javascript">
+		$(".menu li").each(function(){
+			var flag =false;
+			$(this).click(function(){
+				if(!flag){
+					$(".nav_tab li").removeClass("active");
+					var li = "<li class='active'>";
+					$(".nav_tab").append(li);
+
+					
+					var condiv = "<div class='con_div'>";
+					$(".con").append(condiv);
+					
+					flag = true;
+				}
+				$(".nav_tab>li").eq($(this).index()).addClass("active").siblings().removeClass("active");
+				$(".nav_tab>li").eq($(this).index()).html($(".menu>li").eq($(this).index()).html())
+				$(".con>div").hide();
+				$(".con>div").eq($(this).index()).show();
+				$(".con>div").html($(this).index());
+				
+			})
+		})
+	</script>
+</body>
+</html>
