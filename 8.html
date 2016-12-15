@@ -69,7 +69,7 @@
 			<li><a href="javascript:;">摘要-menu</a></li>
 		</ul>
 		<div class="con">
-			<div class="con_div">首页</div>
+			
 		</div>
 	</div>
 	
@@ -80,12 +80,13 @@
 			$(this).click(function(){
 				if(!flag){
 					$(".nav_tab li").removeClass("active");
-					var li = "<li class='active'>";
+					var li = "<li class='active' onclick='getTab(this)'>";
 					$(".nav_tab").append(li);
-
+					
 					
 					var condiv = "<div class='con_div'>";
 					$(".con").append(condiv);
+					
 					
 					flag = true;
 				}
@@ -93,10 +94,21 @@
 				$(".nav_tab>li").eq($(this).index()).html($(".menu>li").eq($(this).index()).html())
 				$(".con>div").hide();
 				$(".con>div").eq($(this).index()).show();
-				$(".con>div").html($(this).index());
+				$(".con>div").eq($(this).index()).html($(this).index());
 				
-			})
-		})
+			});
+		
+
+		});
+
+		function getTab(obj){
+			var _this=$(obj).index();
+			$(obj).addClass("active").siblings().removeClass("active");
+			$(".con>div").css("display","none");
+			$(".con>div").eq(_this).css("display","block");
+
+		}
+
 	</script>
 </body>
 </html>
