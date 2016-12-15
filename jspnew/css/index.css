@@ -1,0 +1,231 @@
+.header{
+    height: 60px;
+}
+.header .logo{
+    width:200px;
+    padding-top: 16px;
+    height: 44px;
+}
+.header .logo a{
+    margin-left:34px;
+}
+.header .fr{
+    width: 320px;
+    height:60px;
+}
+.header .fr li a{
+    background: url(../images/ico_xysystem_1.png) no-repeat;
+    display: block;
+    margin-top: 13px;
+}
+.header .fr li.message a{
+    margin-top: 15px;
+ }
+.header .fr li.message a span {
+    display: block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    text-align: center;
+    line-height: 14px;
+    font-size: 12px;
+    top:0px;
+    left:13px;
+    color: #fff;
+    background: url(../images/ico_xysystem_1.png) no-repeat -31px -49px;
+}
+.header .fr li.setting a{
+    margin-top: 22px;
+}
+.header .fr li{
+    float: left;
+    height:60px;
+    line-height: 60px;
+}
+.header .fr li{
+    display: block;
+ }
+.header .fr li.face{
+    width: 195px;
+}
+.header .fr li.message{
+    width: 67px;
+}
+.header .fr li.setting{
+    width: 40px;
+}
+.header .fr li.face a{
+    background: none;
+    height: 34px;
+    line-height:34px;
+    background: url(../images/ico_xysystem_1.png) no-repeat 0px 0px;
+    text-indent: 50px;
+    font-family:"宋体";
+    font-size: 14px;
+    color: #333333;
+    font-weight: 300;
+
+}
+.header .fr li.message a{
+    width: 29px;
+    height: 23px;
+    position: relative;
+    background-position: 0px -41px;
+}
+.header .fr li.setting a{
+    width: 15px;
+    height: 15px;
+    background-position: 0px -67px;
+}
+
+
+.menu {
+    width: 200px;
+    background-color: #464e78;
+    font-size: 14px;
+    font-family:"宋体";
+}
+.menu>ul>li{
+    position: relative;
+}
+.menu>ul>li>i{
+    display: block;
+    width: 17px;
+    height:18px;
+    position: absolute;
+    top:18px;
+    left:35px;
+    background: url(../images/ico_xysystem_1.png) no-repeat;
+}
+.menu>ul>li>em{
+    display: inline-block;
+    display: none;
+    width:5px;
+    height:56px;
+    position: absolute;
+    top:0px;
+    right:0px;
+    background-color: #bf1027;
+}
+.menu>ul>li>i.i1{
+    background-position: 0px -184px;
+}
+.menu>ul>li>i.i2{
+    background-position: -24px -184px;
+}
+.menu>ul>li>i.i3{
+    background-position: -53px -184px;
+}
+.menu>ul>li>i.i4{
+    background-position: -86px -184px;
+}
+.menu>ul>li>i.i5{
+    background-position: -114px -184px;
+}
+.menu>ul>li>i.i6{
+    background-position: -144px -184px;
+}
+.menu>ul>li>i.i7{
+    background-position: -184px -184px;
+}
+.menu>ul>li>i.i8{
+    background-position: 0px -130px;
+}
+.menu>ul>li>i.i9{
+    background-position: -31px -130px;
+}
+.menu>ul>li>i.i10{
+    background-position: -54px -130px;
+}
+.menu>ul>li>i.i11{
+    background-position: -80px -130px;
+}
+.menu>ul>li>i.i12{
+    background-position: -108px -130px
+}
+.menu>ul>li.active em{
+    display: block;
+}
+.menu>ul>li.active i.i1{
+    background-position: 0px -159px;
+}
+.menu>ul>li.active i.i2{
+    background-position: -24px -159px;
+}
+.menu>ul>li.active i.i3{
+    background-position: -53px -159px;
+}
+.menu>ul>li.active i.i4{
+    background-position: -86px -159px;
+}
+.menu>ul>li.active i.i5{
+    background-position: -114px -159px;
+}
+.menu>ul>li.active i.i6{
+    background-position: -144px -159px;
+}
+.menu>ul>li.active i.i7{
+    background-position: -184px -159px;
+}
+.menu>ul>li.active i.i8{
+    background-position: 0px -99px;
+}
+.menu>ul>li.active i.i9{
+    background-position: -31px -99px;
+}
+.menu>ul>li.active i.i10{
+    background-position: -54px -99px;
+}
+.menu>ul>li.active i.i11{
+    background-position: -80px -99px;
+}
+.menu>ul>li.active i.i12{
+    background-position: -108px -99px
+}
+
+
+
+.menu>ul>li>h1 a{
+    display: inline-block;
+    width:200px;
+    height:56px;
+    line-height:56px;
+    color: #a7acc6;
+
+    text-indent: 70px;
+}
+.menu>ul>li.active{
+    background-color: #3b4267;
+
+}
+.menu>ul>li.active>h1 a{
+    color: #fff;
+}
+.menu>ul>li.active ul{
+    display: block;
+}
+.menu>ul>li>ul{
+    display: none;
+    width: 170px;
+    position: absolute;
+    top:0px;
+    left: 200px;
+    z-index:999;
+}
+.menu>ul>li li{
+    height:56px;
+    line-height:56px;
+    border-bottom: 1px solid #e9f0f9;
+}
+.menu>ul>li li a{
+    color: #333333;
+    display: inline-block;
+    width: 170px;
+    height: 56px;
+    line-height: 56px;
+    text-indent: 30px;
+}
+.menu>ul>li li:hover a{
+    background: #e9f0f9;
+    color: #666666;
+}
